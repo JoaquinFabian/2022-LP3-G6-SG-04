@@ -39,6 +39,7 @@ public class Principal {
         if(fl==true)
         {
             System.out.println("Adivinaste!!!!");
+            System.out.println("Ganaste un auto 0 Kilometros");
             System.out.println(elegir(vida));
         }
         else System.out.println("ups, perdiste...");
