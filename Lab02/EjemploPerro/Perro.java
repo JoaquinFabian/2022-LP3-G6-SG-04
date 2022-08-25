@@ -106,7 +106,7 @@ public class Perro {
     /*-----------Métodos de ingreso y salida----------------------*/
 
     public void ingreso() {
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
 
             System.out.println("Ingresa la raza del canino:");
             raza = sc.next();
@@ -124,7 +124,7 @@ public class Perro {
             temp = sc.nextDouble();
 
             System.out.println("-----------------------------------");
-        }
+        
     }
 
     public void salida() {

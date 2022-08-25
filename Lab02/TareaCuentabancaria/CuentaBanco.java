@@ -62,17 +62,23 @@ public class CuentaBanco {
     /*--------------Metodo de menu interno----------------------*/
 
     public void menuinterno(int opc) {
+        double cantidad1;
+        Scanner sc = new Scanner(System.in);
         switch (opc) {
             case 1:
-                ingresar(cantidad);
-                System.out.println("La cantidad nueva en su cuenta es: " + cantidad);
+                System.out.println("Ingrese la cantidad que quiere depositar");
+                cantidad1 = sc.nextDouble();
+                ingresar(cantidad1);
+                System.out.println("La cantidad nueva en su cuenta es: " + cantidad1);
                 break;
             case 2:
-                retirar(cantidad);
-                System.out.println("La cantidad nueva en su cuenta es: " + cantidad);
+                System.out.println("Ingrese la cantidad que quiere retirar");
+                cantidad1 = sc.nextDouble();
+                retirar(cantidad1);
+                System.out.println("La cantidad nueva en su cuenta es: " + cantidad1);
                 break;
             case 3:
-                System.out.println("Su saldo es: " + cantidad);
+                System.out.println("Su saldo es: " + this.cantidad);
                 break;
             case 4:
                 System.out.println("Cerrando menu");
@@ -83,17 +89,19 @@ public class CuentaBanco {
     /*--------------ingresar y mostrar-----------------*/
 
     public void ingresodatos() {
+        double cantidad2;
+        
         Scanner sc = new Scanner(System.in);
-
+        
         System.out.println("Ingrese su nombre:");
         titular = sc.next();
 
         System.out.println("Desea ingresar una cantidad a su nueva cuenta (Si o No)");
         String rp = sc.next();
-        if (rp == "Si" || rp == "si") {
+        if (rp.equals("Si" ) || rp.equals("si")) {
             System.out.println("Cual es la cantidad que desea ingresar: ");
-            cantidad = sc.nextDouble();
-            ingresar(cantidad);
+            cantidad2 = sc.nextDouble();
+            ingresar(cantidad2);
         }
         System.out.println("----Ingreso de datos exitoso----");
 
