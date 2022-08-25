@@ -1,3 +1,6 @@
+/*Autor: Joaquin Fabian Ponze Cateriano
+Descripcion: programa principal Perro
+*/
 import java.util.*;
 
 public class PrincipalPerro {
@@ -13,12 +16,12 @@ public class PrincipalPerro {
 
 
             /*-----------Ingreso Datos de Fido---------------*/
-            System.out.println(Fido.ingreso());
+            Fido.ingreso();
             Fido.increEdad(2);
 
             
             /*-----------Ingreso Datos de Pelusa-------------*/
-            System.out.println(Pelusa.ingreso());
+            Pelusa.ingreso();
             Pelusa.increEdad(5);
 
 

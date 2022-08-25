@@ -4,13 +4,18 @@ Descripcion: clase perro, atributos, conjunto a sus métodos
 */
 import java.util.*;
 
+
 public class Perro {
+
+    /*-----------------Variables----------------------*/
 
     private String raza;
     private String color;
     private double temp;
     private int edad;
     public double peso;
+
+    /*-----------------Constructores----------------------*/
 
     public Perro(String raza, String color) {
         this.raza = raza;
@@ -100,7 +105,7 @@ public class Perro {
 
     /*-----------Métodos de ingreso y salida----------------------*/
 
-    public String ingreso() {
+    public void ingreso() {
         try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Ingresa la raza del canino:");
@@ -117,8 +122,9 @@ public class Perro {
 
             System.out.println("Ingresa la temperatura del canino:");
             temp = sc.nextDouble();
+
+            System.out.println("-----------------------------------");
         }
-        return "Ingreso de datos exitoso";
     }
 
     public void salida() {
