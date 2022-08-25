@@ -69,13 +69,13 @@ public class CuentaBanco {
                 System.out.println("Ingrese la cantidad que quiere depositar");
                 cantidad1 = sc.nextDouble();
                 ingresar(cantidad1);
-                System.out.println("La cantidad nueva en su cuenta es: " + cantidad1);
+                System.out.println("La cantidad nueva en su cuenta es: " + this.cantidad);
                 break;
             case 2:
                 System.out.println("Ingrese la cantidad que quiere retirar");
                 cantidad1 = sc.nextDouble();
                 retirar(cantidad1);
-                System.out.println("La cantidad nueva en su cuenta es: " + cantidad1);
+                System.out.println("La cantidad nueva en su cuenta es: " + this.cantidad);
                 break;
             case 3:
                 System.out.println("Su saldo es: " + this.cantidad);

@@ -5,14 +5,14 @@ public class PerfilMedico {
 
     /*-----------------Variables----------------------*/
 
-    String primernombre;
-    String apellido;
-    String genero;
-    int dia;
-    int mes;
-    int anio;
-    double altura;
-    double peso;
+    private String primernombre;
+    private String apellido;
+    private String genero;
+    private int dia;
+    private int mes;
+    private int anio;
+    private double altura;
+    private double peso;
 
     /*-----------------Constructores----------------------*/
 
@@ -27,5 +27,14 @@ public class PerfilMedico {
         this.peso = 0.0;
     }
 
+    /*-----------------Gets - Sets ----------------------*/
+
+    public String getPrimernombre() {
+        return primernombre;
+    }
+
+    public void setPrimernombre(String primernombre) {
+        this.primernombre = primernombre;
+    }
 
 }
