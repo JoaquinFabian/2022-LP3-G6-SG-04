@@ -1,6 +1,8 @@
+
 /*Autor: Joaquin Fabian Ponze Cateriano
 Descripcion: clase perro, atributos, conjunto a sus métodos
 */
+import java.util.*;
 
 public class Perro {
 
@@ -92,7 +94,38 @@ public class Perro {
     /*---------------------Métodos----------------------*/
     /* Método especial para llamar a todos los atributos del objeto y mostrarlo */
     public String tostring() {
-        return "Perro(" + "raza=" + raza + ", color=" + color + ", temp=" + temp +
-        ", edad=" + edad + ", peso=" + peso + ')';
+        return "Perro(" + "raza= " + raza + ", color= " + color + ", temp= " + temp + " grados " +
+                ", edad= " + edad + " anios" + ", peso=" + peso + "kg" + ')';
+    }
+
+    /*-----------Métodos de ingreso y salida----------------------*/
+
+    public String ingreso() {
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Ingresa la raza del canino:");
+            raza = sc.next();
+
+            System.out.println("Ingresa el color del canino:");
+            color = sc.next();
+
+            System.out.println("Ingresa la edad del canino:");
+            edad = sc.nextInt();
+
+            System.out.println("Ingresa el peso del canino:");
+            peso = sc.nextDouble();
+
+            System.out.println("Ingresa la temperatura del canino:");
+            temp = sc.nextDouble();
+        }
+        return "Ingreso de datos exitoso";
+    }
+
+    public void salida() {
+        System.out.println("La raza del canino es:" + getRaza());
+        System.out.println("El color del canino es:" + getColor());
+        System.out.println("La edad del canino es:" + getEdad());
+        System.out.println("El peso del canino es:" + peso);
+        System.out.println("La temperatura del canino es:" + getTemp());
     }
 }
