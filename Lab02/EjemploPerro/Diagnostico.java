@@ -1,3 +1,8 @@
+
+/*Autor: Joaquin Fabian Ponze Cateriano
+Descripcion: clase Diagnostico y su método para saber el 
+estado del perro
+*/
 public class Diagnostico {
 
     public String aptoVacunaA (Perro perro){
