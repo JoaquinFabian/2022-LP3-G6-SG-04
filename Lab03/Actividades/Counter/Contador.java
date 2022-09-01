@@ -6,6 +6,7 @@ package Lab03.Actividades.Counter;
 
 public class Contador{
     static int acumulador = 0;
+    final static int VALOR_INICIAL = 10;
     private int valor;
 
     public static int acumulador() {
@@ -17,9 +18,14 @@ public class Contador{
         Contador.acumulador += valor;
     }
 
+    public Contador(){
+        new Contador(Contador.VALOR_INICIAL);
+    }
+
     public void inc() {
         valor++;
         acumulador++;
+        
     }
 
     public int getValor() {
@@ -71,7 +77,56 @@ variable de clase, mientras si lo colocamos private, está cambiando de ámbito 
 por lo que abría un error de sintaxis del código debido una variable estática no puede ser ejecutada por un objeto
 dentro del main y al volverla private forzamos este caso indebidamente y errónea.
 
-d) Qué sucede si no inicializamos el valor del campo acumulador?
+mientras si cambiamos por un private static, deja de ser una variable la cual se puede utilizar dentro del main, 
+ya que esta debe tener un objeto para ser ejecutada y al ser estática dentro de la clase, abría un problema dentro
+del programa principal.
 
+d) Qué sucede si no inicializamos el valor del campo acumulador?
+No sucede nada, porque al asignarle a la variable que es de tipo int siempre se inicializa con el valor de 0.
+
+e) Vamos a agregar una constante (VALOR_INICIAL) a la clase Contador y otro
+constructor, tal como se muestra a continuación (las modificaciones están
+enmarcadas):
+Imagen de código modificado.
+
+f) Fíjate en la instrucción “this(Contador.VALOR_INICIAL)”. ¿Qué hace está
+instrucción?
+esta dirección indica la nueva constante la cual es "VALOR_INICIAL", como es dada dentro del constructor, 
+esta toma su valor y lo puede mandar al incremento, que estas variables dentro del incremento no están relacionadas 
+directamente con la constante, pero como también está relacionado a una variable de clase y junto al constructor
+los parámetros mandados pueden tomar su propio proceso del primer constructor, que, por ende, si al objeto lo le incrementamos
+su valor de la constante "VALOR_INICIAL" este si varía como acumulador.
+
+g) Escriba una clase ContadorTest2 que compruebe y evidencie el funcionamiento de
+la clase modificada y de la respuesta al ejercicio anterior.
+
+RESPUESTA POR PANTALLA:
+0
+10
+4
+11
+15
+
+h) ¿Qué sucede si cambiamos la instrucción “this(Contador.VALOR_INICIAL)” por
+“new Contador(Contador.VALOR_INICIAL)”.
+
+Dentro de la ejecución de este código si es posible realizar el "new Contador", esto para asignarle el valor al objeto
+como nuevo contador, esto hace que su valor de principio o de la constante se reinicie, por ende, por pantalla nos daría
+un nuevo valor con respecto a su incremento por lo que el resultado nos daría 1.
+
+i) ¿Qué sucede si el primer constructor lo modificamos de la siguiente forma?
+Nos da un error de sintaxis, porque este constructor depende de un objeto y parámetros como tal, mientras el otro constructor
+bien es necesario el objeto, pero toma el valor como si fuese el de la constante "VALOR_INICIAL", por lo que el error 
+evidente dentro del primer constructor modificado.
+
+j) Realice las siguientes modificaciones en la clase Contador:
+    3.j.1.Añada una variable de clase nContadores que contenga el número de
+    contadores creados.
+
+    3.j.2.Añada una variable de clase ultimoContador que almacene el valor inicial del
+    último contador creado.
+
+    3.j.3.Escriba una clase ContadorTest3 que compruebe y evidencie el
+    funcionamiento de la clase con estas úlltimas modificaciones.
 
 */
