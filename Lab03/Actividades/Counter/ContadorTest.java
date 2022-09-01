@@ -1,3 +1,8 @@
+/* Autor: Joaquin Fabian Ponze Caterino
+Descripción: Programa main donde creamos 2 objetos c1 y c2
+donde se incrementa el valor de nuestro objeto mediante se ejecute 
+el proceso inc.
+*/
 package Lab03.Actividades.Counter;
 public class ContadorTest {
     public static void main(String[] args) {
@@ -14,3 +19,10 @@ public class ContadorTest {
     System.out.println(Contador.acumulador);
     }
 }
+
+/* SALIDA DE PANTALLA:
+0
+5
+11
+16
+*/
