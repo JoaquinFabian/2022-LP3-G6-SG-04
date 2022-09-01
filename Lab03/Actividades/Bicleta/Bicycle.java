@@ -54,18 +54,23 @@ public class Bicycle {
 instancia, métodos de instancia y métodos de clase. Posteriormente implemente y
 compruebe la funcionalidad de las mismas. 
 
+Variables de clase:
+* static int count;
+
+Variables de instancia:
+* private String ownerName;
+* private float distance;
+* private String idBicy;
 
 
+Métodos de clase:
+* public static Bicycle mostUsed(Bicycle x, Bicycle y);
+* public static void counter();
 
-
-
-
-
-
-
-
-
-
-
-
+Métodos de instancia:
+* public Bicycle(String ownerName, int distance): //constructor
+* public String getOwnerName();
+* public float getDistance();
+* public void distanceTraveled(int meters);
+* public String toString();
 */
