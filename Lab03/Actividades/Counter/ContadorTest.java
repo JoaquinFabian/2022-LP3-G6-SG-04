@@ -21,8 +21,8 @@ public class ContadorTest {
 }
 
 /* SALIDA DE PANTALLA:
-0
-5
-11
-16
+0 -----> acumulador vacio 
+5 -----> incremento de c1 por completo con los 2 inc()
+11 ----> incremento de c2 por su unico inc()
+16 ----> acumulador lleno conjunto a todos los valores ingresados
 */
