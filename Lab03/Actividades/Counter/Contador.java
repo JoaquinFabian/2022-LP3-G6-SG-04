@@ -8,24 +8,32 @@ public class Contador{
     static int acumulador = 0;
     final static int VALOR_INICIAL = 10;
     private int valor;
+    static int nContadores = 0;
+    static int ultimoContador = 0;
+    
 
     public static int acumulador() {
         return acumulador;
     }
 
     public Contador(int valor) {
+        if (Contador.ultimoContador == Contador.nContadores){
+            Contador.ultimoContador = Contador.nContadores;}
         this.valor = valor;
         Contador.acumulador += valor;
+        Contador.nContadores++;
     }
 
     public Contador(){
+        if (Contador.ultimoContador == Contador.nContadores){
+            Contador.ultimoContador = Contador.nContadores;}
         new Contador(Contador.VALOR_INICIAL);
+        Contador.nContadores++;
     }
 
     public void inc() {
         valor++;
         acumulador++;
-        
     }
 
     public int getValor() {
@@ -122,11 +130,26 @@ evidente dentro del primer constructor modificado.
 j) Realice las siguientes modificaciones en la clase Contador:
     3.j.1.Añada una variable de clase nContadores que contenga el número de
     contadores creados.
+    Esta acción conjunta a la variable de clase es bastante sencilla, cada vez que se inicialice un objeto por medio de algún
+    constructor se aumentan los dígitos de uso de esta variable de clase, como por 2 objetos son 3 constructores utilizados
+    dentro del programa nos dará como respuesta 3
 
     3.j.2.Añada una variable de clase ultimoContador que almacene el valor inicial del
     último contador creado.
+    Al utiliza el ultimo contador, sabemos que esta variable también se ha inicializado en 0 como esto lo podemos saber, 
+    basta con un if para que la igualdad se dé siempre y el valor inicial del contador de constructores siempre se 
+    mantenga en 0, el cual es su valor inicial.
 
     3.j.3.Escriba una clase ContadorTest3 que compruebe y evidencie el
-    funcionamiento de la clase con estas úlltimas modificaciones.
+    funcionamiento de la clase con estas últimas modificaciones.
+
+    Salida por pantalla con respectivos parámetros:
+    0 ---> valor inicial del acumulador de valores
+    10 ---> valor asignado a la constante de clase "VALOR_INICIAL"
+    4 ---> valor del primer objeto con el incremento dado
+    1 ---> valor del segundo objeto con el incremento dado
+    15 ---> nuevo valor del acumulador global, este acumula todas las variables
+    0 ---> valor inicial de la cuenta de los contadores
+    3 ---> valor final de la cuenta de los contadores
 
 */
