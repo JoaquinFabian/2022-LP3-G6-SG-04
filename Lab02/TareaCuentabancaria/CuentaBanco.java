@@ -14,6 +14,8 @@ public class CuentaBanco {
     private String titular;
     private double cantidad;
 
+    Scanner sc = new Scanner(System.in);
+
     /*-----------------Constructores----------------------*/
 
     public CuentaBanco() {
@@ -63,7 +65,7 @@ public class CuentaBanco {
 
     public void menuinterno(int opc) {
         double cantidad1;
-        Scanner sc = new Scanner(System.in);
+
         switch (opc) {
             case 1:
                 System.out.println("Ingrese la cantidad que quiere depositar");
@@ -91,7 +93,7 @@ public class CuentaBanco {
     public void ingresodatos() {
         double cantidad2;
         
-        Scanner sc = new Scanner(System.in);
+        
         
         System.out.println("Ingrese su nombre:");
         titular = sc.next();
@@ -123,7 +125,7 @@ public class CuentaBanco {
         System.out.println("3.- Mostrar saldo actual");
         System.out.println("4.- Cerrar menu");
 
-        Scanner sc = new Scanner(System.in);
+       
         System.out.println("Que opcion desea escoger:");
         int rp1 = sc.nextInt();
         if (rp1 > 0 && rp1 < 5) {

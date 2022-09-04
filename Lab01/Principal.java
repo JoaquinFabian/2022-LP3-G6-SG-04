@@ -1,9 +1,11 @@
+package Lab01;
 
 /*Autor: Joaquin Fabian Ponze Cateriano
 Descripcion: programa principal modificado
 para entregar un premio, siempre y cuando se 
 se adivine el número
 */
+
 import java.util.Scanner;
 
 public class Principal {

@@ -1,6 +1,8 @@
 /*Autor: Joaquin Fabian Ponze Cateriano
 Descripcion: programa principal Perro
 */
+package Lab02.EjemploPerro;
+
 import java.util.*;
 
 public class PrincipalPerro {

@@ -1,9 +1,10 @@
-
 /*Autor: Joaquin Fabian Ponze Cateriano
 Descripcion: clase perro, atributos, conjunto a sus métodos
 */
-import java.util.*;
 
+package Lab02.EjemploPerro;
+
+import java.util.*;
 
 public class Perro {
 
@@ -14,6 +15,7 @@ public class Perro {
     private double temp;
     private int edad;
     public double peso;
+    Scanner sc = new Scanner(System.in);
 
     /*-----------------Constructores----------------------*/
 
@@ -106,25 +108,24 @@ public class Perro {
     /*-----------Métodos de ingreso y salida----------------------*/
 
     public void ingreso() {
-        Scanner sc = new Scanner(System.in);
 
-            System.out.println("Ingresa la raza del canino:");
-            raza = sc.next();
+        System.out.println("Ingresa la raza del canino:");
+        raza = sc.next();
 
-            System.out.println("Ingresa el color del canino:");
-            color = sc.next();
+        System.out.println("Ingresa el color del canino:");
+        color = sc.next();
 
-            System.out.println("Ingresa la edad del canino:");
-            edad = sc.nextInt();
+        System.out.println("Ingresa la edad del canino:");
+        edad = sc.nextInt();
 
-            System.out.println("Ingresa el peso del canino:");
-            peso = sc.nextDouble();
+        System.out.println("Ingresa el peso del canino:");
+        peso = sc.nextDouble();
 
-            System.out.println("Ingresa la temperatura del canino:");
-            temp = sc.nextDouble();
+        System.out.println("Ingresa la temperatura del canino:");
+        temp = sc.nextDouble();
 
-            System.out.println("-----------------------------------");
-        
+        System.out.println("-----------------------------------");
+
     }
 
     public void salida() {

@@ -7,9 +7,10 @@ package Lab02.TareaCuentabancaria;
 import java.util.*;  
 
 public class BancoPrincipal {
-    public static void main(String[] args) {
 
-        try (Scanner sc = new Scanner(System.in)) {
+    Scanner sc = new Scanner(System.in);
+    
+    public static void main(String[] args) {
 
             /*-----------Creación de objetos por cada clase-------------*/
 
@@ -23,6 +24,6 @@ public class BancoPrincipal {
 
             /*-----------Ejecutando Menu-------------*/
             joaquin.menuacciones();
-        }
+        
     } 
 }

@@ -3,6 +3,8 @@
 Descripcion: clase Diagnostico y su método para saber el 
 estado del perro
 */
+package Lab02.EjemploPerro;
+
 public class Diagnostico {
 
     public String aptoVacunaA (Perro perro){

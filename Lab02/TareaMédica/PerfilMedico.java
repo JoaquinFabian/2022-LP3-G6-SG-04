@@ -4,7 +4,6 @@ import java.util.*;
 
 public class PerfilMedico {
 
-
     /*-----------------Variables----------------------*/
 
     private String primernombre;
@@ -19,6 +18,8 @@ public class PerfilMedico {
     private double fcm;
     private double imc;
 
+    Scanner sc = new Scanner(System.in);
+
     /*-----------------Constructores----------------------*/
 
     public PerfilMedico() {
@@ -27,7 +28,7 @@ public class PerfilMedico {
         this.genero = "";
         this.dia = 0;
         this.mes = 0;
-        this.anio= 0;
+        this.anio = 0;
         this.altura = 0.0;
         this.peso = 0.0;
     }
@@ -123,13 +124,10 @@ public class PerfilMedico {
         System.out.println("La frecuencia cardiaca de la persona es:" + imc);
     }
 
-
     /*--------------ingresar y mostrar-----------------*/
 
     public void ingresodatos() {
-        
-        Scanner sc = new Scanner(System.in);
-        
+
         System.out.println("Ingrese su nombre:");
         primernombre = sc.next();
 
@@ -159,13 +157,12 @@ public class PerfilMedico {
     public void mostrardatos() {
         System.out.println("Nombre de la persona: " + getPrimernombre());
         System.out.println("Apellido de la persona: " + getApellido());
-        System.out.println("La fecha de nacimiento de la persona es: " + getDia()+ "/" + getMes()+ "/" + getAnio());
+        System.out.println("La fecha de nacimiento de la persona es: " + getDia() + "/" + getMes() + "/" + getAnio());
         System.out.println("La edad de la persona: " + aniosper);
         System.out.println("La altura de la persona es: " + getAltura());
         System.out.println("El peso de la persona es: " + getPeso());
         System.out.println("La frecuencia cardiaca de la persona es: " + fcm);
         System.out.println("El IMC de la persona es: " + imc);
     }
-
 
 }

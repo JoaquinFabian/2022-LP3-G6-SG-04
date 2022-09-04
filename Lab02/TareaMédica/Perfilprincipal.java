@@ -6,9 +6,10 @@ package Lab02.TareaMédica;
 import java.util.*;
 
 public class Perfilprincipal {
+    Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
 
         /*-----------Creación de objetos por cada clase-------------*/
 
