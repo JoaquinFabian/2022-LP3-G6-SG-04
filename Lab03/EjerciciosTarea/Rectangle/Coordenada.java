@@ -7,27 +7,29 @@ public class Coordenada {
     private int x;
     private int y;
 
-    /////////////// Constructores //////////////
 
+    ////////////// Constructores ////////////////
     public Coordenada() {
+        this(0, 0);
     }
-
+    
     public Coordenada(int x, int y) {
         this.x = x;
         this.y = y;
     }
-
+    
     public Coordenada(Coordenada c) {
+
     }
 
     ///////////// Gets y Sets ////////////////////
 
     public int getX() {
-        return this.x;
+        return x;
     }
 
     public int getY() {
-        return this.y;
+        return y;
     }
 
     public void setX(int x) {
@@ -37,15 +39,11 @@ public class Coordenada {
     public void setY(int y) {
         this.y = y;
     }
-
+    
     ////////////// Metodo toStrign ///////////////////
 
     @Override
-
     public String toString() {
-        String s = String.format("Coordenada X: %s\t Coordenada Y:",
-                this.x, this.y);
-        return s;
+        return "[x=" + x + ", y=" + y + "]";
     }
-
 }
