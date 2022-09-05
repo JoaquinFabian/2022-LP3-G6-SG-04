@@ -30,6 +30,7 @@ public class Principalrec {
 
 //////////// Pantalla de los 6 rectangulos ////////
 /* 
+
 *** Rectangulo #1 ***
 Base: Rectangulo  =  Esquina1=[x=6, y=3], esquina2=[x=9, y=7], color=Verde
 El Area es: 12
