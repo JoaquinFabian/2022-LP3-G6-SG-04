@@ -83,10 +83,11 @@ public class Arreglo {
                             System.out.println("-------------Diagonal Inversa------------");
                         } while (!(diagonal1 >= 0 && diagonal1 < matriz.length));
                         System.out.println("La suma de los valores diagonal inversa es: "
-                                + SumarDiagonalInversa(matriz, diagonal1));
+                                + SumarDiagonalInversa(matriz));
                     } else {
                         System.out.println("Debes rellenar la matriz primero");
                     }
+                    break;
                 case 6:
                     if (rellenado) {
                         System.out.println("La media de la matriz es: " + SumarMedia(matriz));
@@ -157,14 +158,127 @@ public class Arreglo {
     }
 
     // Método para sumar la diagonal inversa de la matriz
-    public static int SumarDiagonalInversa(int[][] matriz, int diagonalinversa) {
+    public static int SumarDiagonalInversa(int[][] matriz) {
         int suma = 0;
-        for (int j = 3; j < matriz.length; j--) {
-            suma += matriz[diagonalinversa][j];
-            diagonalinversa++;
+        for (int i = 0; i < matriz.length; i++) {
+            suma += matriz[i][matriz[i].length - (i+1)];
         }
         return suma;
     }
 }
 
-// PANTALLA:
+/* PANTALLA
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+1
+Escribe un numero en la posicion 0 0
+1
+Escribe un numero en la posicion 0 1
+2
+Escribe un numero en la posicion 0 2
+3
+Escribe un numero en la posicion 0 3
+4
+Escribe un numero en la posicion 1 0
+5
+Escribe un numero en la posicion 1 1
+6
+Escribe un numero en la posicion 1 2
+7
+Escribe un numero en la posicion 1 3
+8
+Escribe un numero en la posicion 2 0
+9
+Escribe un numero en la posicion 2 1
+10
+Escribe un numero en la posicion 2 2
+11
+Escribe un numero en la posicion 2 3
+12
+Escribe un numero en la posicion 3 0
+13
+Escribe un numero en la posicion 3 1
+14
+Escribe un numero en la posicion 3 2
+15
+Escribe un numero en la posicion 3 3
+16
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+2
+Elige una fila
+2
+La suma de los valores de la fila 2 es: 42
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+3
+Elige una columna
+3
+La suma de los valores de la columna es: 3 es: 40
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+4
+-------------Diagonal Principal------------
+La suma de los valores diagonal principal1 es: 34
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+5
+-------------Diagonal Inversa------------
+La suma de los valores diagonal inversa es: 34
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+6
+La media de la matriz es: 8.0
+Menu
+1. Rellenar Matriz
+2. Sumar fila
+3. Sumar columna
+4. Sumar diagonal principal
+5. Sumar diagonal inversa
+6. Sumar la media
+7. Salir
+Elije una opcion :
+7
+FIN */ 
