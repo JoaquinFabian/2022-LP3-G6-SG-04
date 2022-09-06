@@ -176,8 +176,10 @@ Menu
 5. Sumar diagonal inversa
 6. Sumar la media
 7. Salir
+
 Elije una opcion :
 1
+
 Escribe un numero en la posicion 0 0
 1
 Escribe un numero en la posicion 0 1
@@ -210,6 +212,7 @@ Escribe un numero en la posicion 3 2
 15
 Escribe un numero en la posicion 3 3
 16
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
@@ -220,9 +223,11 @@ Menu
 7. Salir
 Elije una opcion :
 2
+
 Elige una fila
 2
 La suma de los valores de la fila 2 es: 42
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
@@ -233,9 +238,11 @@ Menu
 7. Salir
 Elije una opcion :
 3
+
 Elige una columna
 3
 La suma de los valores de la columna es: 3 es: 40
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
@@ -246,8 +253,10 @@ Menu
 7. Salir
 Elije una opcion :
 4
+
 -------------Diagonal Principal------------
 La suma de los valores diagonal principal1 es: 34
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
@@ -258,8 +267,10 @@ Menu
 7. Salir
 Elije una opcion :
 5
+
 -------------Diagonal Inversa------------
 La suma de los valores diagonal inversa es: 34
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
@@ -270,7 +281,9 @@ Menu
 7. Salir
 Elije una opcion :
 6
+
 La media de la matriz es: 8.0
+
 Menu
 1. Rellenar Matriz
 2. Sumar fila
