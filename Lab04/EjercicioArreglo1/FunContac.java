@@ -11,6 +11,7 @@ public class FunContac {
     /////////////// Método para invocar al menu //////////////////
     static public void Menu(List<Contacto> listaContactos) {
         Scanner sc = new Scanner(System.in);
+
         int opcion;
         boolean salir = false;
         boolean lleno = false;
@@ -29,7 +30,6 @@ public class FunContac {
                 case 1:
                     AñadirContacto(listaContactos);
                     System.out.println("\n");
-                    MostarContacto(listaContactos);
                     lleno = true;
                     break;
 
@@ -45,7 +45,9 @@ public class FunContac {
 
                 case 3:
                     if (lleno) {
-
+                        System.out.println("\n");
+                        ModificarContacto(listaContactos);
+                        System.out.println("\n");
                     } else {
                         System.out.println("Debes ingresar un Contacto primero");
                     }
@@ -53,7 +55,9 @@ public class FunContac {
 
                 case 4:
                     if (lleno) {
-
+                        System.out.println("\n");
+                        EliminarContacto(listaContactos);
+                        System.out.println("\n");
                     } else {
                         System.out.println("Debes ingresar un Contacto primero");
                     }
@@ -106,23 +110,66 @@ public class FunContac {
         nombre = sc.next();
 
         for (int i = 0; i < size; i++) {
-            if(true == listaContactos.contains(listaContactos.get(i).setNombre(nombre))){
-                System.out.println("Se encontro el contacto dentro de su lista de contactos");
-                System.out.println("Se encontro el contacto en la posicion " + listaContactos.get(i));
-                MostarContacto(listaContactos);
-                System.out.println("\n");
+            if ((listaContactos.get(i)).getNombre() == nombre){
+                System.out.println(listaContactos.get(i));
+                System.out.println("Se encontro su contacto dentro del directorio");
+                System.out.println("En la posicion " + listaContactos.size());
+            }
+            else{
+                System.out.println("No encontro su contacto dentro del directorio");
             }
         }
     }
 
     /////////////// Método para modificar contactos //////////////////
     public static void ModificarContacto(List<Contacto> listaContactos) {
+        int size = listaContactos.size();
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("=========================");
+        System.out.println("Cantidad de contactos: " + listaContactos.size());
+        int contact = 0;
+        while (contact < 1 || contact > size) {
+            System.out.print("Contacto a modificar: ");
+            contact = sc.nextInt();
+        }
+        System.out.println("=========================");
+        System.out.println("Contacto Escogido a Modificar");
+        System.out.println("Contacto: " + contact + " | " + listaContactos.get(contact - 1));
+
+        String st;
+        System.out.println("=========================");
+        System.out.print("Ingresar nuevo nombre: ");
+        st = sc.nextLine();
+        st = sc.nextLine();
+        (listaContactos.get(contact - 1)).setNombre(st);
+
+        System.out.print("Ingresar nuevo Telefono: ");
+        st = sc.nextLine();
+        (listaContactos.get(contact - 1)).setTelefono(st);
+
+        System.out.print("Ingresar nueva Direccion: ");
+        st = sc.nextLine();
+        (listaContactos.get(contact - 1)).setDireccion(st);
 
     }
 
     /////////////// Método para eliminar contactos //////////////////
     public static void EliminarContacto(List<Contacto> listaContactos) {
+        int size = listaContactos.size();
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("=========================");
+        System.out.println("Cantidad de contactos: " + listaContactos.size());
+        int contact = 0;
+        while (contact < 1 || contact > size) {
+            System.out.print("Contacto a Eliminar: ");
+            contact = sc.nextInt();
+        }
+
+        System.out.println("=========================");
+        System.out.println("Contacto " + contact + " Borrado");
+        listaContactos.remove(contact - 1);
     }
 
     /////////////// Método para mostrar contactos //////////////////
