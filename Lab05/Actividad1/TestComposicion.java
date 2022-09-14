@@ -6,7 +6,7 @@ public class TestComposicion {
 
         Scanner sc = new Scanner(System.in);
 
-
+        // creacion de objetos:
         Persona Joaquin = new Persona(445678, "Joaquin", "Ponze");
         Cuenta cuenta1 = new Cuenta(447586, 300.0);
 
