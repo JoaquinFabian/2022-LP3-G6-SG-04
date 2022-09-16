@@ -90,7 +90,7 @@ public class Banco {
 
     public String toString() {
         String s;
-        s = "Banco: " + this.nombre + "\n";
+        s = "Banco: " + nombre + "\n";
         for (Persona persona : this.clientes) {
             if (persona != null) {
                 s = persona + "\n";
