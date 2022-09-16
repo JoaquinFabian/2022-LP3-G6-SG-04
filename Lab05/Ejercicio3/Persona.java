@@ -1,28 +1,29 @@
-package Lab05.Ejercicio1;
+package Lab05.Ejercicio3;
+
 import java.util.*;
 
-import Lab05.Actividad3.Banco;
+
 
 public class Persona {
 	private int id;
 	private String nombre;
 	private String apellido;
-	private char tipoCliente;
-	private Cuenta cuenta;
+	private char Clientetipo;
 	private Banco banco;
+
 	
-	public Persona(int id, String nombre,String apellido,char tipoCliente) {//Se crea el objeto
+	public Persona(int id, String nombre,String apellido,char Clientetipo) {//Se crea el objeto
 
 		this.id=id;
 		this.nombre=nombre;
 		this.apellido=apellido;
-		this.tipoCliente=tipoCliente;
-		if(tipoCliente=='C')
-			this.cuenta=new Cuenta(1000);
-		if(tipoCliente=='B')
-			this.cuenta=new Cuenta(5000);
-		if(tipoCliente=='E')
-			this.cuenta=new Cuenta(8000);
+		this.Clientetipo=Clientetipo;
+		if(Clientetipo=='C')
+			this.banco = new Banco("bcp");
+		if(Clientetipo=='B')
+            this.banco = new Banco("bcp");
+		if(Clientetipo=='E')
+            this.banco = new Banco("bcp");
 	}
 	
 	public Persona(int id, String nombre,String apellido) {
@@ -34,11 +35,11 @@ public class Persona {
 	}
 
 	public char getTipoCliente() {
-		return tipoCliente;
+		return Clientetipo;
 	}
 
-	public void setTipoCliente(char tipoCliente) {
-		this.tipoCliente = tipoCliente;
+	public void setTipoCliente(char Clientetipo) {
+		this.Clientetipo = Clientetipo;
 	}
 
 	public int getId() {
@@ -67,7 +68,7 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return "Cliente :	" + this.id + "\nTipo:	" + this.tipoCliente + "\nNombres :	 " + this.nombre+" " + this.apellido +this.cuenta;
+		return "Cliente :	" + this.id + "\nTipo:	" + this.Clientetipo + "\nNombres :	 " + this.nombre+" " + this.apellido+"\n";
 	}
 
 	@Override
