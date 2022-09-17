@@ -29,7 +29,7 @@ public class TestAsociacion {
         bcp.buscarCliente(Mario);
 
         //------ imprimir datos del bcp ---------
-        bcp.toString();
+        System.out.println(bcp);
 
 
         //------ Creacion de objeto bbva ---------
@@ -56,6 +56,6 @@ public class TestAsociacion {
         bbva.buscarCliente(Geampier);
 
         //------ imprimir datos del bbva --------
-        bbva.toString();
+        System.out.println(bbva);
     }
 }

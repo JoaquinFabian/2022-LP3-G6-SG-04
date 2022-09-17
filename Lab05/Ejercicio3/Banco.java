@@ -1,6 +1,5 @@
-package Lab05.Actividad3;
+package Lab05.Ejercicio3;
 
-import Lab05.Actividad1.*;
 
 public class Banco {
 
@@ -37,6 +36,8 @@ public class Banco {
         this.clientes = clientes;
     }
 
+
+
     // -------------- Métodos ---------------------
 
     // -------------- Método para agregar cliente ---------------------
@@ -65,7 +66,7 @@ public class Banco {
                 if (this.clientes[i] != null) {
                     if (this.clientes[i].equals(persona)) {
                         this.clientes[i] = null;
-                        System.out.println("Se encontro la persona " + persona + " y se elimino de la lista");
+                        System.out.println("Se encontro la persona " + persona.getNombre() + " y se elimino de la lista");
                     }
                 }
             }
@@ -77,7 +78,7 @@ public class Banco {
         for (int i = 0; i < this.clientes.length; i++) {
             if (this.clientes[i] != null) {
                 if (this.clientes[i].equals(persona)) {
-                    System.out.println("Se encontro la persona " + persona + " en la posicion " + i + " de la lista");
+                    System.out.println("Se encontro la persona " + persona.getNombre() + " en la posicion " + i + " de la lista");
                     return true;
                 }
             }
@@ -90,7 +91,9 @@ public class Banco {
 
     public String toString() {
         String s;
-        s = "Banco: " + nombre + "\n";
+        s = "\n" +
+        "--------------- Banco de Datos ---------------" + "\n"+
+        "Banco: " + nombre + "\n"+ "\n";
         for (Persona persona : this.clientes) {
             if (persona != null) {
                 s += persona + "\n";
