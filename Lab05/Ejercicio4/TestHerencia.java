@@ -8,6 +8,10 @@ public class TestHerencia {
         EmpleadoDistribucion emplead3 = new EmpleadoDistribucion("Antonio Camino", 75829931, 1200, 35, "Arequipa");
 
         System.out.println(emplead1);
+
+        emplead2.incrementosalarial();
+        emplead3.incrementosalarial();
+
         System.out.println(emplead2);
         System.out.println(emplead3);
 
@@ -16,7 +20,6 @@ public class TestHerencia {
 }
 
 /* SALIDA DE PANTALLA
-
 
 --------------- Datos del empleado ---------------
 Nombre: Manuel Cortina
@@ -28,7 +31,7 @@ Dias de vacaciones: 28
 --------------- Datos del empleado de Produccion ---------------
 Nombre: Juan Mota
 DNI: 55273892
-Saldo: 4000.0
+Saldo: 4600.0
 Dias de vacaciones: 30
 Truno: noche
 
@@ -36,7 +39,8 @@ Truno: noche
 --------------- Datos del empleado de Distribucion ---------------
 Nombre: Antonio Camino
 DNI: 75829931
-Saldo: 1200.0
+Saldo: 1380.0
 Dias de vacaciones: 35
 Region: Arequipa
+
 */

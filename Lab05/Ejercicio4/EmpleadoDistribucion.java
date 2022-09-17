@@ -24,7 +24,7 @@ public class EmpleadoDistribucion extends Asalariado  {
 
     // -------------- métodos -------------------
 
-    public void incrementosalarial(double saldo){
+    public void incrementosalarial(){
         this.saldo = saldo * 1.15;
     }
 

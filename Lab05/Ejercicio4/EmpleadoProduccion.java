@@ -21,7 +21,7 @@ public class EmpleadoProduccion extends Asalariado {
         this.turno = nuevo_turno;
     }
 
-    public void incrementosalarial(double saldo) {
+    public void incrementosalarial() {
         this.saldo = saldo * 1.15;
     }
 
