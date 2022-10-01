@@ -12,15 +12,18 @@ package Lab03.Actividades.Bicleta;
 
 public class TestBicycle {
     public static void main(String[] args) {
-        Bicycle a, b;
+        Bicycle a, b, c;
         a = new Bicycle("Adam Smith", 1);
         b = new Bicycle("Ben Jones", 5);
+        c = new Bicycle("Ben qefifqe", 10);
         System.out.println(b.getOwnerName());
         System.out.println(a.getOwnerName());
+        System.out.println(c.getOwnerName());
         a.distanceTraveled(1400);
         b.distanceTraveled(1100);
         Bicycle mostOld = Bicycle.mostUsed(a,b);
         System.out.println(mostOld);
+
     }
 }
 

@@ -15,7 +15,7 @@ public class Bicycle {
         this.distance = distance;
         counter();
         String tempId = String.valueOf(10000 * count);
-        this.idBicy = ownerName.substring(0, 3) + tempId.substring(0);
+        this.idBicy = ownerName.substring(0, 2) + tempId.substring(1);
     }
 
     public String getOwnerName() {

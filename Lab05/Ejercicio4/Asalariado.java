@@ -49,6 +49,7 @@ public class Asalariado {
     public void setDiasVacaciones(int nuevo_diasVacaciones) {
         this.diasVacaciones = nuevo_diasVacaciones;
     }
+
     
     // -------------- método toString -------------------
 
