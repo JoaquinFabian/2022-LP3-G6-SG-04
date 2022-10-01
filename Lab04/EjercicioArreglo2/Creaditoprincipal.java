@@ -1,7 +1,7 @@
 package Lab04.EjercicioArreglo2;
 
 import java.util.*;
-import java.util.Random;
+
 
 public class Creaditoprincipal {
 

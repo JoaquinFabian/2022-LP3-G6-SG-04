@@ -7,7 +7,7 @@ public class TestHerencia {
         EmpleadoProduccion emplead2 = new EmpleadoProduccion("Juan Mota", 55273892, 4000, 30, "noche");
         EmpleadoDistribucion emplead3 = new EmpleadoDistribucion("Antonio Camino", 75829931, 1200, 35, "Arequipa");
 
-        Asalariado obj1 = new EmpleadoDistribucion("Antonio Camino", 75829931, 1200, 35, "Arequipa");
+
 
         System.out.println(emplead1);
 

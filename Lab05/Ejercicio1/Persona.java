@@ -1,7 +1,7 @@
 package Lab05.Ejercicio1;
 import java.util.*;
 
-import Lab05.Actividad3.Banco;
+
 
 public class Persona {
 	private int id;
@@ -9,7 +9,6 @@ public class Persona {
 	private String apellido;
 	private char tipoCliente;
 	private Cuenta cuenta;
-	private Banco banco;
 	
 	public Persona(int id, String nombre,String apellido,char tipoCliente) {//Se crea el objeto
 

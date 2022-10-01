@@ -12,8 +12,8 @@ public class Factura implements Porpagar {
 
     public Factura(String Pieza, String descripcion, int cuenta, double precio)
     {
-        this.numeroPieza = Pieza;
-        this.descripcionPieza = descripcion;
+        numeroPieza = Pieza;
+        descripcionPieza = descripcion;
         setCantidad(cuenta);
         setPrecioPorArticulo(precio);
     }
@@ -59,4 +59,17 @@ public class Factura implements Porpagar {
     public double obtenerMontoPago() {
         return getCantidad() * getPrecioPorArticulo();
     }
+
+    @Override
+	public String toString() {
+		String s;
+		s = "\n" +
+				"--------------- Factura ---------------" + "\n" +
+				"Numero de piezas: " + this.numeroPieza +" "+ "("+this.descripcionPieza+")" + "\n" +
+				"Cantidad: " + this.cantidad+ "\n" +
+				"Precio por articulo: " + this.precioPorArticulo + "\n"+ 
+                "Pago vencido: " + this.obtenerMontoPago() + "\n";
+		return s;
+	}
+
 }
