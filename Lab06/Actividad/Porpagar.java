@@ -1,7 +1,7 @@
 package Lab06.Actividad;
 
-public class Porpagar {
+public interface Porpagar {
 
-    double obt
+     double obtenerMontoPago();
 
 }
