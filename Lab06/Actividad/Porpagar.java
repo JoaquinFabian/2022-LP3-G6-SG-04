@@ -4,5 +4,4 @@ public interface Porpagar {
 
      double obtenerMontoPago();
 
-
 }

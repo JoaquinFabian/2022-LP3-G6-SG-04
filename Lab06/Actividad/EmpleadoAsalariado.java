@@ -28,6 +28,7 @@ public class EmpleadoAsalariado extends Empleado {
         return getSalarioSemanal();
     }
 
+    // ------------- Metodo ToString -------------
     @Override
 	public String toString() {
 		String s;
