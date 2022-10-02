@@ -70,7 +70,7 @@ public class Bicicleta implements ImpactoEcologico {
     public String toString() {
         String s;
         s = "\n" +
-                "--------------- Datos Ecologicos del "+ this.TipoBicicleta +" ---------------" + "\n" +
+                "--------------- Datos Ecologicos de la"+ this.TipoBicicleta +" ---------------" + "\n" +
                 "Categoria Contaminante: " + this.TipoBicicleta+ "\n" +
                 "Gases Desprendidos: " + this.Gases+ "\n" +
                 "Consumo energetico: " + this.Emision_energia+ "\n"+
