@@ -75,7 +75,7 @@ public class Bicicleta implements ImpactoEcologico {
                 "Gases Desprendidos: " + this.Gases+ "\n" +
                 "Consumo energetico: " + this.Emision_energia+ "\n"+
                 "Consumo de agua: " + this.Salud_personal + "\n" +
-                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() + "\n";
+                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() +" GEI" +"\n";
         return s;
     }
 

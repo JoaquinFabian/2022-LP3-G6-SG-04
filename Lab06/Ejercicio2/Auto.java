@@ -79,7 +79,7 @@ public class Auto implements ImpactoEcologico {
                 "Emision de Carbono del "+ this.TipoAuto + ": " + this.EmisionCo2 + "\n"+
                 "Aceleracion minima: " + this.Aceleracion + "\n" +
                 "Gasolina depositada: " + this.Gasolina+ "\n" +
-                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() + "\n";
+                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() +" GEI" + "\n";
         return s;
     }
 

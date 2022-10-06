@@ -75,7 +75,7 @@ public class Edificio implements ImpactoEcologico {
                 "Cantidad de Residuos Solidos: " + this.ResiduosSolidos+ "\n" +
                 "Consumo energetico: " + this.ConsumoEnergetico + "\n"+
                 "Consumo de agua: " + this.CosumoAgua + "\n" +
-                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() + "\n";
+                "Impacto Ecologico: " + this.ObtenerImpactoEcologico() +" GEI" + "\n";
         return s;
     }
 

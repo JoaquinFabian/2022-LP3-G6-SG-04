@@ -25,23 +25,23 @@ Objetos junto a su impacto Ambiental procesados de forma Polimorfica:
 
 --------------- Datos Ecologicos del Automovil ---------------
 Categoria Contaminante: Automovil
-Emision de Carbono del Automovil: 200.0
+Emision de Carbono del Automovil: 200.0 
 Aceleracion minima: 50.0
 Gasolina depositada: 26.4979
-Impacto Ecologico: 566
+Impacto Ecologico: 566 GEI
 
 --------------- Datos Ecologicos del Edificio ---------------
 Categoria Contaminante: Edificio
 Cantidad de Residuos Solidos: 30.0
 Consumo energetico: 70.0
 Consumo de agua: 35.0
-Impacto Ecologico: 560.0
+Impacto Ecologico: 560.0 GEI
 
 --------------- Datos Ecologicos de la Biclicleta ---------------
 Categoria Contaminante: Biclicleta
 Gases Desprendidos: 0.0
 Consumo energetico: 20.0
 Consumo de agua: 100.0
-Impacto Ecologico: 1.0000040
+Impacto Ecologico: 1.0000040 GEI
 
 */
