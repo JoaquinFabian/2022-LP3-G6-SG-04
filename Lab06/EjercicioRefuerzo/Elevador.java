@@ -106,9 +106,9 @@ public class Elevador {
             System.out.println("Peso Actual dentro del elevador: " + edificio.getElevador().getPersona().getPesocompleto());
             System.out.println("Personas dentro del elevador: " + edificio.getElevador().getPersona().mostrarpersonas(lisPersonas) + "\n");
             System.out.println("********* Menu de elevador *********");
-            System.out.println("1. Subir");
-            System.out.println("2. Bajar");
-            System.out.println("3. Salir");
+            System.out.println("[1] Subir");
+            System.out.println("[2] Bajar");
+            System.out.println("[3] Salir");
             System.out.println("Escoja una opcion del menu: ");
             opcion = sc.nextInt();
             switch (opcion) {
