@@ -21,5 +21,4 @@ public class App {
         int res = cociente(num, dem);
         System.out.printf("\nResultado: %d / %d = %d\n", num, dem, res);
     }
-
 }

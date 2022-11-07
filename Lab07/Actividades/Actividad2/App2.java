@@ -10,7 +10,7 @@ public class App2 {
         return numerador / denomidador;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         boolean fl = true;
         do {
             try {

@@ -16,7 +16,7 @@ public class Appejercicio2 {
             valor ++;
             valor += Integer.parseInt(num);
             valor ++;
-            System.out.println("Valor al final del try : "+valor);
+            System.out.println("Valor al final del try : "+ valor);
         }
         catch(NumberFormatException e){
             valor += Integer.parseInt("2");
